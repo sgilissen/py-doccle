@@ -3,7 +3,7 @@
     Author: Steve Gilissen
     Date created: 12/10/2022
     Date last modified: 12/10/2022
-    Python Version: 3.5+
+    Python Version: 3.6+
 """
 import warnings
 import requests
