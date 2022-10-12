@@ -20,12 +20,12 @@ def get_version(rel_path):
 
 setup(
     name='py-doccle',
-    version=get_version("py-doccle/__init__.py"),
+    version=get_version("doccle/__init__.py"),
     description='A Python package to get data from Doccle.',
     url='https://github.com/sgilissen/py-doccle',
     author='Steve Gilissen',
     license='GNU GPLv3',
-    packages=['py-doccle'],
+    packages=['doccle'],
     install_requires=['requests'],
 
     classifiers=[
