@@ -9,4 +9,4 @@
 __author__ = "Steve Gilissen"
 __credits__ = ["Steve Gilissen"]
 __license__ = "GPLv3"
-__version__ = "0.0.1"
+__version__ = "0.0.2"

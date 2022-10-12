@@ -18,6 +18,13 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
 
 
+def get_readme():
+    here = os.path.abspath(os.path.dirname(__file__))
+    with open(os.path.join(here, 'README.md'), mode='r') as file:
+        readme = file.read()
+    return readme
+
+
 setup(
     name='py-doccle',
     version=get_version("doccle/__init__.py"),
@@ -25,6 +32,8 @@ setup(
     url='https://github.com/sgilissen/py-doccle',
     author='Steve Gilissen',
     license='GNU GPLv3',
+    long_description=get_readme(),
+    long_description_content_type='text/markdown',
     packages=['doccle'],
     install_requires=['requests'],
 
